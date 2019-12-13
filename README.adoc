@@ -1,0 +1,19 @@
+= Better Smloadr
+
+image::resources/reademe_headerimg.png[lol,155,align="center"]
+
+This is a copy-paste version of https://git.fuwafuwa.moe/SMLoadrDev/SMLoadr[sm-loader]footnote:[Site is down, so use wayback machine]
+
+better_smloadr allows downloading full or single albums, playlists, artists discography, or songs from deezer \(\^_^)/
+
+=== build deps
+* https://github.com/itamiko/libfetch[libfetch] or link:submodules/libfetch[local_libfetch] dir
+* https://github.com/rafagafe/tiny-json[tiny-json] or link:submodules/tiny-json[local_tiny_json] dir
+* https://github.com/sabotage-linux/netbsd-curses[netbsd-curses] or link:submodules/netbsd_cursesh[local_netbsd_curses] dir
+
+=== build & compile
+[source,sh]
+----
+mkdir .build; cd .build
+camke -DCMAKE_BUILD_TYPE=Release ..; ninja .
+----
