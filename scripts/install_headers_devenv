@@ -1,0 +1,7 @@
+#! /bin/bash
+cd submodules
+
+make install-headers INCDIR=../include/
+
+cd netbsd-curses
+make CHOST="x86_64-pc-linux-gnu" CXXFLAGS="${CFLAGS}" CFLAGS="-march=skylake -O2 -pipe" INCDIR=../../include/netbsd-curses LIBDIR=../../lib/netbsd-curses install-stalibs install-headers -j4

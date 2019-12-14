@@ -1,0 +1,12 @@
+[submodule "submodules/netbsd-curses"]
+	path = submodules/netbsd-curses
+	url = https://github.com/sabotage-linux/netbsd-curses
+	branch = master
+[submodule "submodules/tiny-json"]
+	path = submodules/tiny-json
+	url = https://github.com/rafagafe/tiny-json
+	branch = master
+[submodule "submodules/libfetch"]
+	path = submodules/libfetch
+	url = https://github.com/Itamiko/libfetch
+	branch = master

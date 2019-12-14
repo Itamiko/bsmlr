@@ -1,0 +1,1 @@
+int new_headerwin(int nlines, int ncols, int y0, int x0);

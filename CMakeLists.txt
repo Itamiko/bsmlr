@@ -3,6 +3,7 @@ project (bsmlr LANGUAGES C)
 
 set(SOURCES
 	${PROJECT_SOURCE_DIR}/src/better_smloader.c
+	${PROJECT_SOURCE_DIR}/src/create_hwin.c
 )
 
 if(WIN32)
@@ -13,11 +14,9 @@ if (UNIX)
 	add_executable(bsmlr ${SOURCES})
 endif()
 
-include(${PROJECT_SOURCE_DIR}/cmake/paths.cmake)
-include(${PROJECT_SOURCE_DIR}/cmake/safe_guards.cmake)
+include(${PROJECT_SOURCE_DIR}/cmake/include_addional_cmake.cmake)
 
 target_include_directories(bsmlr
 	PRIVATE
 		${PROJECT_SOURCE_DIR}/include
-		${PROJECT_SOURCE_DIR}/submodules
 )

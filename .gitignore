@@ -1,2 +1,7 @@
 .vscode
 build
+include/libfetch
+include/netbsd-curses
+include/tiny-json
+lib/*/
+lib/*.h
